@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p>Hello <span style="color:black">{{ name }}</span> <-- got this from params</p>
+    </div>
+  </div>
+  <div class="row">
+    Fetched Your goals are:
+    <ul>
+      <li *ngFor="let item of holderArr">{{ item }}</li>
+    </ul>
+  </div>
+  <button (click)="sendMeHome();">{{name}}</button>
+</div>

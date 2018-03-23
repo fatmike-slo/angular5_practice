@@ -1,0 +1,31 @@
+
+  <div class="row title-wrapper">
+    <div class="col title-left">Add a bucket list item</div>
+    <div class="col title-right">Your bucket list ({{ counter }})</div>
+  </div>
+  <div class="row content-wrapper-left" [@goalsAnimation]="goalArray.length">
+    <div class="col">
+      Use this form below to add a new bucket list goal. What do you want to do with your life?
+      <form action="">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your goals..." [(ngModel)]="goalText" [ngModelOptions]="{standalone:true}">
+          <br>
+          <span>{{ goalText }}</span>
+        </div>
+        <input type="submit" class="btn btn-submit" (click)="addGoal();">
+      </form>
+    </div>
+    <div class="col content-wrapper-right">
+      <p class="wish-list" *ngFor="let item of goalArray">{{ item }}
+        <span (click)="removeGoal(item);" *ngIf="goalArray.length != 0"><i class="fa fa-times" style="color:#bb3232; float:right;"></i></span>
+      </p>
+    </div>
+  </div>
+  <div>
+    <!-- get value from target -->
+    <p #myTarget>Pekulato!</p>
+    <button class="btn btn-sm" (click)="print(myTarget.innerHTML);">KLIKZ</button>
+    <!-- ternary operation in interpolation -->
+    <p>{{ test > 0 ? test : "manj od ena, to je hardkodano"}}</p>
+  </div>
+

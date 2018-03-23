@@ -1,0 +1,41 @@
+
+/* global */
+h4 {
+    font-family: 'PT Mono', monospace;
+    color:#fff;
+}
+
+
+/* title - header */
+
+.title-wrapper {
+    background-color: #216fc7;
+}
+.title-left {
+    margin:15px 0px 15px 0px;
+}
+.title-right {
+    margin:15px 0px 15px 0px;
+}
+
+/* content */
+
+.content-wrapper-left {
+    background-color: #409ad6;
+}
+.content-wrapper-left>.col {
+    margin-top:20px;
+}
+.content-wrapper-right>p {
+    padding-top:5px;
+    padding-bottom: 5px;
+    background-color: #0e87ff;
+}
+input {
+    margin:5px 0px 5px 0px;
+}
+.btn-submit {
+    margin-bottom:15px;
+    background-color: greenyellow;
+    color:blue;
+}
